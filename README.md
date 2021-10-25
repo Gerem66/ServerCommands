@@ -5,6 +5,7 @@
 | Commande | Description |
 |-|-|
 | adduser USERNAME | Ajouter un utilisateur |
+| usermod -aG sudo USERNAME | Ajouter un utilisateur dans le groupe "sudo" |
 | visudo | Afficher la configuraition "sudo" |
 
 ### SSH
