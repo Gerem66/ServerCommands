@@ -44,3 +44,7 @@
   * Ctrl-A A : Renommer le terminal actuel
   * Ctrl-A N/P/0-9 : Permet de naviguer dans le terminal suivant/précédent/0-9e
 * screen -r [session N°] : Pour récupérer le dernier terminal (ou celui correspondant)
+* screen -ls : Lister tous les terminaux détachés
+
+### Autres
+* df [-H] : Check disk space
