@@ -46,5 +46,12 @@
 * screen -r [session N°] : Pour récupérer le dernier terminal (ou celui correspondant)
 * screen -ls : Lister tous les terminaux détachés
 
+### Docker
+* sudo docker images [-a]
+* sudo docker image rm IID
+* sudo docker ps [-a]
+* sudo docker build -t my-rn:latest .
+* sudo docker run -it --rm -v /home/gerem/scripts/:/home/Projects --network="host" my-rn bash
+
 ### Autres
 * df [-H] : Check disk space
