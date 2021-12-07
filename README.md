@@ -39,9 +39,10 @@
 
 ### Screen
 * screen : Ouvre un nouveau terminal (Ctrl-D pour le fermer)
+* screen -S NAME : Ouvre un nouveau terminal avec le nom NAME
   * Ctrl-D : Fermer le terminal
   * Ctrl-A D : Sortir du terminal
-  * Ctrl-A A : Renommer le terminal actuel
+  * Ctrl-A A : Renommer le terminal actuel (useless)
   * Ctrl-A N/P/0-9 : Permet de naviguer dans le terminal suivant/précédent/0-9e
 * screen -r [session N°] : Pour récupérer le dernier terminal (ou celui correspondant)
 * screen -ls : Lister tous les terminaux détachés
@@ -50,8 +51,8 @@
 * sudo docker images [-a]
 * sudo docker image rm IID
 * sudo docker ps [-a]
-* sudo docker build -t my-rn:latest .
-* sudo docker run -it --rm -v /home/gerem/scripts/:/home/Projects --network="host" my-rn bash
+* sudo docker build -t CONTAINER:latest .
+* sudo docker run -it --rm -v /home/gerem/scripts/:/home/Projects --network="host" CONTAINER bash
 
 ### Autres
 * df [-H] : Check disk space
