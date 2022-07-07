@@ -54,5 +54,11 @@
 * sudo docker build -t CONTAINER:latest .
 * sudo docker run -it --rm -v /home/gerem/scripts/:/home/Projects --network="host" CONTAINER bash
 
+### Disk management
+* mkfs -t ext4/FAT32/NTFS <device> : Format disk
+* dd if=/dev/zero of=<device> : Fill disk with 0 data
+* dd if=/dev/urandom of=<device> : Fill disk with random data
+* badblocks -c 10240 -s -w -t random -v <device> : Fill disk with random data (fatest, which provides lower quality random data)
+
 ### Autres
 * df [-H] : Check disk space
