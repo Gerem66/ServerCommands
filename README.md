@@ -60,5 +60,10 @@
 * dd if=/dev/urandom of=<device> : Fill disk with random data
 * badblocks -c 10240 -s -w -t random -v <device> : Fill disk with random data (fatest, which provides lower quality random data)
 
+### SSH
+* Generate secure public/private key : `ssh-keygen -t ed25519 -a 64 -f ./id_ed25519`
+* Enable public key: `ssh -i ~/.ssh/mykey user@host` (or rename id_ed25519.pub as authorized_keys)
+* Move id_ed25519 in client's .ssh folder, and set 400 permission
+
 ### Autres
 * df [-H] : Check disk space
