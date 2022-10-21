@@ -28,6 +28,12 @@
 | iptables -A OUTPUT -i eth0 -p tcp --sport 22 -m state --state NEW,EESTABLISHED -j ACCEPT | Accepter les communications sortantes sur l'interface eth0 du protocole tcp (ssh) depuis le port de 22 |
 | iptables -P INPUT DROP | Refuser tous les types de connexions non cités dans les règles précédentes |
 
+### Ports (uPnP)
+| Commande | Description |
+|-|-|
+| upnpc -e "DESCRIPTION" -r PORT TCP/UDP | Ajouter un port vers le localhost |
+| upnpc -l/R | Lister tous les ports ouverts |
+| upnpc -d PORT TCP/UDP | Supprimer un port du localhost |
 
 ## Linux
 ### Background process
